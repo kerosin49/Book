@@ -4,13 +4,14 @@ print(dog_name, "good name")
 
 print("how old your dog?")
 dog_age = int(input())
+print("convert dog age to human years")
 print(dog_age * 7)
 
-print("how weight pounds", dog_name, sep=" ", end="?")
+print("how weight pounds", dog_name, sep="\n", end="?")
 weight = int(input())
 print(weight)
 
-print(weight, "need convert pounds to kilograms")
+print("need convert pounds to kilograms", weight)
 kg = weight * 0.454
 print(kg)
 
