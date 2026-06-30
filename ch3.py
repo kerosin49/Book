@@ -10,3 +10,17 @@ else:
 
 user = input("камень, ножницы, бумага?")
 print("Вы выбрали", user + ", компьютер выбрал", computer)
+winner = " "
+if computer == user:
+    winner = "Ничья"
+    print(winner)
+else:
+    if computer == "Камень" and user == "Ножницы":
+        winner = "Компьютер"
+    elif computer == "Бумага" and user == "Камень":
+        winner = "Компьютер"
+    elif computer == "Ножницы" and user == "Бумага":
+        winner = "Компьютер"
+    else:
+        winner = "Вы победили"
+    print(winner)
