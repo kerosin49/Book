@@ -1,6 +1,12 @@
-if bank_balance >= ferrari_cost:
-    print("Why not")
-    print("Okay, I'm buying")
+import random
+
+random_choice = random.randint(0, 2)
+if random_choice == 0:
+    computer = "Камень"
+elif random_choice == 1:
+    computer = "Бумага"
 else:
-    print("Not enough money")
-    print("I'll have to save more")
+    computer = "Ножницы"
+
+user = input("камень, ножницы, бумага?")
+print("Вы выбрали", user + ", компьютер выбрал", computer)
