@@ -8,9 +8,12 @@ elif random_choice == 1:
 else:
     computer = "Ножницы"
 
-user = input("камень, ножницы, бумага?")
+user = ""
+while user != "Камень" and user != "Бумага" and user != "Ножницы":
+    user = input("камень, ножницы, бумага?")
 print("Вы выбрали", user + ", компьютер выбрал", computer)
 winner = " "
+
 if computer == user:
     winner = "Ничья"
     print(winner)
@@ -23,7 +26,8 @@ else:
         winner = "Компьютер"
     else:
         winner = "Вы победили"
-    # print(winner)
+
+
 if winner == "Ничья":
     print("Мы оба выбрали", computer + ", играем снова.")
 else:
