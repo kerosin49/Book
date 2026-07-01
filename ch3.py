@@ -23,4 +23,8 @@ else:
         winner = "Компьютер"
     else:
         winner = "Вы победили"
-    print(winner)
+    # print(winner)
+if winner == "Ничья":
+    print("Мы оба выбрали", computer + ", играем снова.")
+else:
+    print(winner, "выиграл, я выбрал", computer)
